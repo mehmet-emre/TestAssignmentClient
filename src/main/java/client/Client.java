@@ -19,7 +19,7 @@ public class Client {
 		
 		System.out.println(""); 
 
-
+		System.out.println(""); 
 	}
 
 }
