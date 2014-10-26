@@ -3,6 +3,8 @@ package service;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import javax.jws.HandlerChain;
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 import javax.xml.ws.WebEndpoint;
@@ -18,6 +20,7 @@ import javax.xml.ws.WebServiceFeature;
  * 
  */
 @WebServiceClient(name = "WalletServiceEndpointService", targetNamespace = "http://service/", wsdlLocation = "http://localhost:8080/WS/WalletService?wsdl")
+@HandlerChain(file="./client/handlers.xml")
 public class WalletServiceEndpointService
     extends Service
 {
